@@ -1,0 +1,717 @@
+html, body{
+height: 100%;
+}
+
+body {
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	overflow: auto;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family:"Luxia Display", "PlayfairDisplay Italic", "PlayfairDisplay Regular", "playfair-display";
+	scroll-behavior: smooth;
+	scrollbar-face-color: #559FEA;
+	scrollbar-highlight-color: #559FEA;
+	scrollbar-shadow-color: #559FEA;
+	scrollbar-3dlight-color: #559FEA;
+	scrollbar-arrow-color: #559FEA;
+	scrollbar-track-color: #559FEA;
+	scrollbar-darkshadow-color: #559FEA;
+}
+
+.style{
+	position: absolute;
+	background-image: url(../image/backleft.svg), url(../image/backright.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left bottom, right bottom;
+	height: 80%;
+	width: 98%;
+	bottom: 2%;
+	left: 1%;
+	right: 2%;
+}
+.backlogo{
+	position: absolute;
+	background-image: url(../image/backlogo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 94%;
+	width: 100%;
+	top: 6%;
+	animation: logo 3s linear;
+	-webkit-animation: logo 3s linear;
+}
+.contactlogo{
+	position: absolute;
+	background-image: url(../image/contactlogo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 94%;
+	width: 100%;
+	top: 6%;
+	animation: logo 3s linear;
+	-webkit-animation: logo 3s linear;
+}
+.comingsoonlogo{
+	position: absolute;
+	background-image: url(../image/comingsoonlogo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 94%;
+	width: 100%;
+	top: 6%;
+	animation: logo 3s linear;
+	-webkit-animation: logo 3s linear;
+}
+@keyframes logo {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes logo {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}	
+
+.sleft{
+	position: absolute;
+	background-image: url(../image/backleftbot.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left bottom;
+	height: 80%;
+	width: 48%;
+	bottom:0;
+	left: 0;
+}
+.sright{
+	position: absolute;
+	background-image: url(../image/backrightbot.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	height: 80%;
+	width: 48%;
+	bottom: 0;
+	right: 0;
+}
+header{
+	display:block;
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 4;
+	
+}
+		.headerLANGlocation{
+			position: absolute;
+			display: block;
+			float: left;
+			height: 100%;
+			width: 25%;
+			left: 2%;
+			top: 25%;
+}
+
+
+			.langRU, .langEN, .langEST {
+				font-family:"Luxia Display", "PlayfairDisplay Italic", "PlayfairDisplay Regular", "playfair-display";
+				display: flex;
+				position: relative;
+				text-align: center;
+				font-size: 60%;
+				color:#D3D3D3;
+				opacity: 0.5;
+				text-decoration:none;
+				font-style: italic;
+				text-transform: none;
+				overflow: hidden;
+  				margin: 0;
+				height: 100%;
+}
+				.langRU{ float: left;}
+				.langEN{float: left;}
+				.langEST{float: left;}
+				.tmoon:hover, .news:hover, .history:hover, .collection:hover, .contacts:hover, .langRU:hover, .langEN:hover, .langEST:hover {
+						opacity: 1;
+						-webkit-transition: all 2s ease;
+						-moz-transition: all 2s ease;
+						-o-transitions: all 2s ease;
+						transition: all 2s ease;
+}
+
+
+
+.menu{
+	position: fixed;
+	width: 100%;
+	height: 15%;
+	opacity: 1;
+	font-size: 50%;
+	text-decoration:none;
+	font-style: italic;
+	text-transform: none;
+}
+.news{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	left:10%;
+	
+	
+}
+
+.history{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	left: 25%;
+}
+
+.moon{
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	left: 40%;
+	top:15%;
+}
+.tmoon{
+	position: absolute;
+	background-image: url(../image/moon.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	height: 50%;
+	top: 30%;
+	opacity: 0.8;
+}
+.collection{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	right: 25%;
+}
+
+.contacts{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	right: 10%;
+}
+.news, .history, .collection, .contacts {
+	color:#D3D3D3;
+	text-decoration: none;
+	top:40%;
+	text-align:center;
+	opacity: 0.8;
+}
+@media all and (min-width: 500px){
+	.menu, .langRU, .langEN, .langEST {
+		font-size: 100%;
+}
+	.moon {
+		height: 100%;
+		top:0;
+	}
+}
+
+.video{
+	height: 120%;
+	top: -10%;
+	width: 100%;
+	object-fit: cover;
+	position: fixed;
+	z-index: -100;
+}
+.videocover{
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -99;
+}
+
+
+
+
+.sectionflow{
+	background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+	min-height: 100vh;
+	top:100%;
+	object-fit: cover;
+    position: relative;
+    overflow: visible;
+	z-index: -98;
+}
+.section{
+	background: black;
+	top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    margin: 0px;
+    display: block;
+    position: relative;
+	object-fit: cover;
+    box-sizing: content-box;
+    width: 100%;
+    min-height: 40%;
+    height: 40%;
+    padding-top: 0px;
+    padding-bottom: 0%;
+	
+}
+.sect{
+	position: relative;
+	background: black;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    right: auto;
+	object-fit: cover;
+    box-sizing: border-box;
+    width: 100%;
+	height: 100vh !important;
+    margin-left: 0 !important;
+    overflow: initial;
+}
+a{
+	text-decoration: none;
+
+}
+
+
+
+
+.title{
+
+    font-weight: normal;
+    font-size: 300%;
+    letter-spacing: 2px;
+	font-family:"PlayfairDisplay Italic", "PlayfairDisplay Regular", "playfair-display";
+	position: absolute;
+	color: white;
+	font-style: italic;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.clarissa,.lisa,.josephine,.poline,.catherine,.jezebel,.bianca,.ella,.gabriella,.isabelle,.athene,.diane,.ivy,.regina,.mia,.gemma{
+	position: relative;
+	width: 100%;
+    height: 100%;
+	background-color: black;
+	float: left;
+}
+.josephine,.bianca,.gabriella,.diane{
+	flex-flow: row-reverse;
+}
+.cl1,.lis1,.jos1,.pol1,.cat2,.jez1,.bi1,.el1,.gab1,.is1,.di1,.iv1,.reg2,.mia1,.gem2{
+	height: 100vh;
+}
+.cl2,.cl3,.lis2,.jos2,.pol2,.pol3,.cat1,.cat3,.jez2,.jez3,.bi2,.el2,.el3,.gab2,.is2,.ath1,.ath2,.ath3,.di2,.iv2,.reg1,.mia2,.gem1{
+	height: 0;
+}
+.cl1{
+	background: url(../image/dresses/cl1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+.cl2{
+	background:  url(../image/dresses/cl2.jpg) fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0;
+}
+.cl3{
+	background: url(../image/dresses/cl3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+.lis1{
+	background: url(../image/dresses/l1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.lis2{
+	background: url(../image/dresses/l2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 100% 0%;
+}
+.jos1{
+	background: url(../image/dresses/Jo1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.jos2{
+	background: url(../image/dresses/Jo2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.pol1{
+	background: url(../image/dresses/p1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.pol2{
+	background: url(../image/dresses/p2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.pol3{
+	background: url(../image/dresses/p3.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.cat1{
+	background: url(../image/dresses/c1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.cat2{
+	background: url(../image/dresses/c2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.cat3{
+	background: url(../image/dresses/c3.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 100% 0%;
+}
+.jez1{
+	background: url(../image/dresses/Je1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.jez2{
+	background: url(../image/dresses/Je2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.jez3{
+	background: url(../image/dresses/Je3.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.bi1{
+	background: url(../image/dresses/B2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.bi2{
+	background: url(../image/dresses/B1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.el1{
+	background: url(../image/dresses/Ella1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.el2{
+	background: url(../image/dresses/E2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.el3{
+	background: url(../image/dresses/E3.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.gab1{
+	background: url(../image/dresses/G2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.gab2{
+	background: url(../image/dresses/Gabriella1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.is1{
+	background: url(../image/dresses/Isabelle2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.is2{
+	background: url(../image/dresses/Isabelle1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 100% 0%;
+}
+.ath1{
+	background: url(../image/dresses/Athene1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.ath2{
+	background: url(../image/dresses/A2.jpg) fixed;
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.ath3{
+	background: url(../image/dresses/A3.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.di1{
+	background: url(../image/dresses/Diane1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.di2{
+	background: url(../image/dresses/Diane2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.iv1{
+	background: url(../image/dresses/Ivy1.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.iv2{
+	background: url(../image/dresses/Ivy2.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 100% 0%;
+}
+.reg1{
+	background: url(../image/dresses/Eleanor1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.reg2{
+	background: url(../image/dresses/Ele2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.mia1{
+	background: url(../image/dresses/Gracie2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.mia2{
+	background: url(../image/dresses/Gracie1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 100% 0%;
+}
+.gem1{
+	background: url(../image/dresses/Gemma1.jpg) fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: 0% 0%;
+}
+.gem2{
+	background: url(../image/dresses/Gemma2.jpg);
+		background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+
+@media all and (min-width: 640px){
+	.clarissa, .poline, .lisa, .josephine, .catherine,.jezebel,.bianca,.ella,.gabriella,.isabelle,.athene{
+		display: flex;
+	}
+	.lis1,.jos1,.cl1,.cl2,.cl3,.pol1,.pol2,.pol3,.jez1,.jez3,.jez2,.el1,.el2,.el3,.is2,.ath2,.lis2,.jos2,.bi2,.is1,.di1,.bi1,.gab1,.di2,.cat1,.cat3,.cat2,.gab2,.ath1,.ath3{
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
+	.lis1,.jos1{
+		flex: 0 1 130vh;
+	}
+	.cl1,.cl2,.cl3,.pol1,.pol2,.pol3,.jez1,.jez3,.jez2,.el1,.el2,.el3,.is2,.ath2{
+		flex: 0 1 100vh;
+	}
+	.ath2{
+		background-size: contain;
+	}
+	.lis2,.jos2,.bi2{
+		flex: 0 0.5 79vh;
+	}
+	.is1,.di1{
+		flex: 0 1.3 147vh;
+	}
+	.bi1,.gab1,.di2{
+		flex: 0 1.9 177vh;
+	}
+	.cat1,.cat3{
+		flex: 0 1 100vh;
+	}
+	.cat2,.gab2,.ath1,.ath3{
+		flex: 0 1.1 100vh;
+	}
+}
+@media all and (min-width: 800px){
+	.diane,.ivy,.regina,.mia,.gemma{
+		display: flex;
+	}
+	.mia1,.di1,.mia2,.di2,.iv1,.iv2,.gem2,.reg1,.gem1,.reg2{
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
+	.mia1{
+		flex: 0 1.9 200vh;
+	}
+	.di1,.mia2{
+		flex: 0 1.3 147vh;
+	}
+	.di2{
+		flex: 0 1.9 177vh;
+	}
+	.iv1{
+		flex: 0 1.9 255vh;
+	}
+	.iv2,.gem2{
+		flex: 0 1.8 200vh;
+	}
+	.reg1{
+		flex: 0 0.8 100vh;
+	}
+	.gem1{
+		flex: 0 1 100vh;
+	}
+	.reg2{
+		flex: 0 1.8 139vh;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	position: fixed;
+	bottom: -0.5%;
+	width: 100%;
+	z-index: 99;
+}
+p{
+	color:#995239;
+	opacity: 0.6;
+	text-align: center;
+	font-size: 0.45em;
+	z-index: 99;
+}
+
+::-webkit-scrollbar {
+width:10px;
+background-color: rgba(134,134,134,0.9);
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+height: 40px;
+background-color: #D8D8D8;
+border: 0px ;
+-webkit-border-radius: 7px;
+}
+
+::-scrollbar {
+width:10px;
+background-color: rgba(134,134,134,0.9);
+}
+ 
+::-scrollbar-thumb:vertical {
+height: 40px;
+background-color: #858585;
+border: 1px solid #474747;
+border-radius: 7px;
+}
+
