@@ -354,6 +354,7 @@ a{
 }
 .cl2{
 	background:  url(../image/dresses/cl2.jpg) fixed;
+	position: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -375,6 +376,7 @@ a{
 }
 .lis2{
 	background: url(../image/dresses/l2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -389,6 +391,7 @@ a{
 }
 .jos2{
 	background: url(../image/dresses/Jo2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -403,6 +406,7 @@ a{
 }
 .pol2{
 	background: url(../image/dresses/P2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -417,6 +421,7 @@ a{
 }
 .cat1{
 	background: url(../image/dresses/C1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -431,6 +436,7 @@ a{
 }
 .cat3{
 	background: url(../image/dresses/C3.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -445,6 +451,7 @@ a{
 }
 .jez2{
 	background: url(../image/dresses/Je2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -466,6 +473,7 @@ a{
 }
 .bi2{
 	background: url(../image/dresses/B1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -480,6 +488,7 @@ a{
 }
 .el2{
 	background: url(../image/dresses/E2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -501,6 +510,7 @@ a{
 }
 .gab2{
 	background: url(../image/dresses/Gabriella1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -515,6 +525,7 @@ a{
 }
 .is2{
 	background: url(../image/dresses/Isabelle1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -529,6 +540,7 @@ a{
 }
 .ath2{
 	background: url(../image/dresses/A2.jpg) fixed;
+	position: fixed;
 		background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -550,6 +562,7 @@ a{
 }
 .di2{
 	background: url(../image/dresses/Diane2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -564,6 +577,7 @@ a{
 }
 .iv2{
 	background: url(../image/dresses/Ivy2.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -571,6 +585,7 @@ a{
 }
 .reg1{
 	background: url(../image/dresses/Eleanor1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -592,6 +607,7 @@ a{
 }
 .mia2{
 	background: url(../image/dresses/Gracie1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -599,6 +615,7 @@ a{
 }
 .gem1{
 	background: url(../image/dresses/Gemma1.jpg) fixed;
+	position: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
