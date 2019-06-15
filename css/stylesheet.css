@@ -231,6 +231,19 @@ header{
 	position: fixed;
 	z-index: -100;
 }
+.videomobile{
+	height: 120%;
+	top: -10%;
+	width: 100%;
+	object-fit: cover;
+	position: fixed;
+	z-index: -100;
+}
+@media handheld{
+	.video{
+	visibility: hidden;}
+}
+
 .videocover{
     background: #000;
     position: fixed;
