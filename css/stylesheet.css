@@ -260,8 +260,7 @@ header{
 
 .sectionflow{
 	background: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
