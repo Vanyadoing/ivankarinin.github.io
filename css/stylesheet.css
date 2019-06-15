@@ -228,8 +228,9 @@ header{
 	top: -10%;
 	width: 100%;
 	object-fit: cover;
-	position: fixed;
+	position: absolute;
 	z-index: -100;
+	visibility: visible;
 }
 .videomobile{
 	height: 120%;
@@ -238,15 +239,16 @@ header{
 	object-fit: cover;
 	position: fixed;
 	z-index: -100;
+	visibility: visible;
 }
 @media only handheld{
-	.video{
+	.video,.videocover{
 	visibility: hidden;}
 }
 
 .videocover{
     background: #000;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
