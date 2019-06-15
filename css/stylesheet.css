@@ -600,7 +600,7 @@ a{
 	background-position: center;
 }
 
-@media all and (min-width: 750px){
+@media screen and (min-width: 800px){
 	.clarissa, .poline, .lisa, .josephine, .catherine,.jezebel,.bianca,.ella,.gabriella,.isabelle,.athene{
 		display: flex;
 	}
@@ -633,7 +633,7 @@ a{
 		flex: 0 1.1 100vh;
 	}
 }
-@media all and (min-width: 800px){
+@media screen and (min-width: 800px){
 	.diane,.ivy,.regina,.mia,.gemma{
 		display: flex;
 	}
