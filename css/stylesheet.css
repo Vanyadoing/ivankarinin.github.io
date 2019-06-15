@@ -272,6 +272,7 @@ header{
     position: relative;
     overflow: visible;
 	z-index: -98;
+						-webkit-overflow-scrolling: touch;
 }
 .section{
 	background: black;
@@ -289,6 +290,7 @@ header{
     height: 40%;
     padding-top: 0px;
     padding-bottom: 0%;
+						-webkit-overflow-scrolling: touch;
 	
 }
 .sect{
@@ -305,6 +307,7 @@ header{
 	height: 100vh !important;
     margin-left: 0 !important;
     overflow: initial;
+						-webkit-overflow-scrolling: touch;
 }
 a{
 	text-decoration: none;
@@ -337,6 +340,8 @@ a{
    	height: 100%;
 	background-color: black;
 	float: left;
+	
+	-webkit-overflow-scrolling: touch;
 }
 .josephine,.bianca,.gabriella,.diane{
 	flex-flow: row-reverse;
@@ -352,6 +357,7 @@ a{
 	width: 100%;
    	height: 100%;
 	background-color: black;
+	-webkit-overflow-scrolling: touch;
 }
 
 .cl1{
@@ -360,6 +366,7 @@ a{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
+	-webkit-overflow-scrolling: touch;
 }
 .cl2{
 	background:  url(../image/dresses/cl2.jpg) fixed;
@@ -368,6 +375,7 @@ a{
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin: 0;
+	-webkit-overflow-scrolling: touch;
 }
 .cl3{
 	background: url(../image/dresses/cl3.jpg);
@@ -375,6 +383,7 @@ a{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
+	-webkit-overflow-scrolling: touch;
 }
 .lis1{
 	background: url(../image/dresses/l1.jpg);
@@ -389,7 +398,7 @@ a{
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
-	background-position: 100% 0%;
+	background-position: 100% 0%; -webkit-overflow-scrolling: touch;
 }
 .jos1{
 	background: url(../image/dresses/Jo1.jpg);
@@ -404,7 +413,7 @@ a{
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
-	background-position: 0% 0%;
+	background-position: 0% 0%; -webkit-overflow-scrolling: touch;
 }
 .pol1{
 	background: url(../image/dresses/P1.jpg);
