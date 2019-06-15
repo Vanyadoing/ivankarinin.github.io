@@ -328,10 +328,10 @@ a{
 	flex-flow: row-reverse;
 }
 .cl1,.lis1,.jos1,.pol1,.cat2,.jez1,.bi1,.ath2,.el1,.gab1,.is1,.di1,.iv1,.reg2,.mia1,.gem2{
-	height: 100vh;
+	height: 100%;
 }
 .cl2,.cl3,.lis2,.jos2,.pol2,.pol3,.cat1,.cat3,.jez2,.jez3,.bi2,.el2,.el3,.gab2,.is2,.ath1,.ath3,.di2,.iv2,.reg1,.mia2,.gem1{
-	height: 0;
+	height: 0%;
 }
 .cl1{
 	background: url(../image/dresses/cl1.jpg);
@@ -600,7 +600,7 @@ a{
 	background-position: center;
 }
 
-@media screen and (orientation: portrait), screen and (min-width: 800px), screen and (not handheld) {
+@media screen and (not handheld){
 	.clarissa, .poline, .lisa, .josephine, .catherine,.jezebel,.bianca,.ella,.gabriella,.isabelle,.athene{
 		display: flex;
 	}
@@ -633,7 +633,7 @@ a{
 		flex: 0 1.1 100vh;
 	}
 }
-@media screen and (orientation: portrait), screen and (min-width: 800px), screen and (not handheld) {
+@media screen and (not handheld){
 	.diane,.ivy,.regina,.mia,.gemma{
 		display: flex;
 	}
