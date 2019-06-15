@@ -11,7 +11,12 @@
 		@import url("css/stylesheet.css");
 		</style>
 		<link rel="shortcut icon" href="image/favicon.png" type="image/png">
-		
+		<!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="jquery/jQuery.scrollSpeed.js"></script>
+		<script src="jquery/jquery.waypoints.js"></script>
 
 	</head>
 		<body>
@@ -200,6 +205,43 @@
 		
 		<!-- photo ends -->
 
+<script type="text/javascript">
+$('.title')
+  .css('opacity', 0) // immediately hide element
+  .waypoint(function(direction) {
+    if (direction === 'down') {
+      $('.title').animate({ opacity: 1 })
+    }
+    else {
+      $('.title').animate({ opacity: 0 })
+    }
+  }, {
+    offset: '500'
+  })
+</script>
+<script type="text/javascript">
+$('.title')
+  .css('opacity', 0) // immediately hide element
+  .waypoint(function(direction) {
+    if (direction === 'up') {
+      $('.title').animate({ opacity: 1 })
+    }
+    else {
+      $('.title').animate({ opacity: 0 })
+    }
+  }, {
+    offset: '200'
+  })
+</script>
+<!-- script scroll -->
+<script>
+	$(function() {  
+    // Custom Easing
+    jQuery.scrollSpeed(70, 1500);
+    
+});
+</script>
+<!-- script scroll -->
 
 			
 	</body>
