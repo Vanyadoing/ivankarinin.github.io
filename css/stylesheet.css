@@ -383,42 +383,42 @@ a{
 	background-position: 0% 0%;
 }
 .pol1{
-	background: url(../image/dresses/p1.jpg);
+	background: url(../image/dresses/P1.jpg);
 		background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-position: center;
 }
 .pol2{
-	background: url(../image/dresses/p2.jpg) fixed;
+	background: url(../image/dresses/P2.jpg) fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-position: center;
 }
 .pol3{
-	background: url(../image/dresses/p3.jpg);
+	background: url(../image/dresses/P3.jpg);
 		background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-position: center;
 }
 .cat1{
-	background: url(../image/dresses/c1.jpg) fixed;
+	background: url(../image/dresses/C1.jpg) fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-position: 0% 0%;
 }
 .cat2{
-	background: url(../image/dresses/c2.jpg);
+	background: url(../image/dresses/C2.jpg);
 		background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-position: center;
 }
 .cat3{
-	background: url(../image/dresses/c3.jpg) fixed;
+	background: url(../image/dresses/C3.jpg) fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
