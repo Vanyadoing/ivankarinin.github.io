@@ -239,7 +239,7 @@ header{
 	position: fixed;
 	z-index: -100;
 }
-@media handheld{
+@media only handheld{
 	.video{
 	visibility: hidden;}
 }
@@ -613,7 +613,7 @@ a{
 	background-position: center;
 }
 
-@media not handheld and (min-width: 420px) and (min-height: 750px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+@media all and (orientation: landscape){
 	.clarissa, .poline, .lisa, .josephine, .catherine,.jezebel,.bianca,.ella,.gabriella,.isabelle,.athene{
 		display: flex;
 	}
@@ -646,7 +646,7 @@ a{
 		flex: 0 1.1 100vh;
 	}
 }
-@media not handheld and (min-width: 420px) and (min-height: 750px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+@media all and (orientation: landscape){
 	.diane,.ivy,.regina,.mia,.gemma{
 		display: flex;
 	}
