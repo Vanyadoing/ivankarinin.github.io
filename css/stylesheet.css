@@ -235,16 +235,7 @@ header{
 
 
 
-.videocover{
-    background: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: -101;
-}
+
 
 
 
