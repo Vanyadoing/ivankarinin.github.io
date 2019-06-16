@@ -349,13 +349,7 @@ a{
 .cl2,.cl3,.lis2,.jos2,.pol2,.pol3,.cat1,.cat3,.jez2,.jez3,.bi2,.el2,.el3,.gab2,.is2,.ath2,.ath3,.di2,.iv2,.reg1,.mia2,.gem1{
 	height: 0;
 }
-.clarissa{
-	position: relative;
-	width: 100%;
-   	height: 100%;
-	background-color: black;
-	
-}
+
 
 .cl1{
 	background: url(../image/dresses/cl1.jpg);
@@ -367,7 +361,6 @@ a{
 }
 .cl2{
 	background:  url(../image/dresses/cl2.jpg) fixed;
-	z-index: 99;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
