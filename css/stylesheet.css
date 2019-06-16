@@ -228,7 +228,8 @@ header{
 	top: -10%;
 	width: 100%;
 	object-fit: cover;
-	position: absolute;
+	position: fixed;
+	z-index: -100;
 
 
 }
@@ -253,6 +254,7 @@ header{
     position: relative;
     overflow: visible;
 	z-index: -98;
+	visibility: hidden;
 						
 }
 .section{
@@ -271,6 +273,7 @@ header{
     height: 40%;
     padding-top: 0px;
     padding-bottom: 0%;
+	visibility: hidden;
 						
 	
 }
@@ -288,6 +291,7 @@ header{
 	height: 100vh !important;
     margin-left: 0 !important;
     overflow: initial;
+	visibility: hidden;
 						
 }
 a{
@@ -321,6 +325,7 @@ a{
    	height: 100%;
 	background-color: black;
 	float: left;
+	visibility: visible;
 	
 	
 }
