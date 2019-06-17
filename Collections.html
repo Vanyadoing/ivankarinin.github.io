@@ -53,7 +53,7 @@
 			<source class="video2s" src="vids/MVID.mp4" type="video/mp4; codecs=avc1.42E01E, mp4a.40.2">
 			<source type="video/mp4" src="vids/MVID.mp4">
 		</video>
-	
+		<button class="mute-video">toggle</button>
 		<!-- mobile video ends -->	
 		
 		
@@ -205,7 +205,22 @@
 		
 		
 		<!-- photo ends -->
+<script type="text/javascript">
+	$("video").prop('muted', true);
 
+	$(".mute-video").click(function () {
+    if ($("video").prop('muted')) {
+        $("video").prop('muted', false);
+        $(this).addClass('unmute-video');
+
+    } else {
+        $("video").prop('muted', true);
+        $(this).removeClass('unmute-video');
+    }
+    console.log($("video").prop('muted'))
+});		
+			
+</script>		
 <script type="text/javascript">
 $('.title')
   .css('opacity', 0) // immediately hide element
