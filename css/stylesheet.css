@@ -262,15 +262,18 @@ header{
     width:32px;
     height:32px;
     text-indent:-999px;
+	z-index: 99;
 }
 .unmute-video {
     background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat right bottom;
     background-size:32px;
+	z-index: 99;
 }
 
 .forbutton {
 	width:100vw;
    	height:100vh;
+	z-index: 99;
 }
 
 
