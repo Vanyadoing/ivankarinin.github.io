@@ -252,7 +252,7 @@ header{
 }
 
 .mute-video {
-    background:url(http://cdn.flaticon.com/png/64/60750.png) no-repeat right bottom;
+    background:url(http://cdn.flaticon.com/png/64/60750.png) no-repeat;
     background-size:32px;
     border:0;
     width:32px;
@@ -264,7 +264,7 @@ header{
 	bottom:0;
 }
 .unmute-video {
-    background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat right bottom;
+    background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat;
     background-size:32px;
 	z-index: -99;
 	position: fixed;
