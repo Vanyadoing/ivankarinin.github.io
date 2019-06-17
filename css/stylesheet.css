@@ -223,7 +223,7 @@ header{
 	}
 }
 
-.video{
+.video1{
 	height: 120%;
 	top: -10%;
 	width: 100%;
@@ -234,11 +234,11 @@ header{
 
 }
 @media all and (orientation: portrait){
-	.video{
+	.video1{
 		display: none;
 }
 
-.videomob{
+.video2{
 	height: 120vh;
 	top: -10%;
 	width: 100vw;
@@ -248,7 +248,7 @@ header{
 	display: block;
 }
 @media all and (orientation: landscape){
-	.videomob{
+	.video2{
 		display: none;
 }
 
