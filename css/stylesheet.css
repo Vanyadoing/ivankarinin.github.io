@@ -258,19 +258,20 @@ header{
     width:32px;
     height:32px;
     text-indent:-999px;
-	z-index: 99;
+	z-index: -98;
+	position: fixed;
+	right:0;
+	bottom:0;
 }
 .unmute-video {
     background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat right bottom;
     background-size:32px;
-	z-index: 99;
+	z-index: -98;
+	position: fixed;
+	right:0;
+	bottom:0;
 }
 
-.forbutton {
-	width:100vw;
-   	height:100vh;
-	z-index: 99;
-}
 
 
 .sectionflow{
@@ -285,7 +286,7 @@ header{
 	object-fit: cover;
     position: relative;
     overflow: visible;
-	z-index: -98;
+	z-index: -97;
 	visibility: hidden;
 						
 }
