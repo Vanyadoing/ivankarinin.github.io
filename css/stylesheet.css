@@ -233,11 +233,11 @@ header{
 	display: block;
 
 }
-@media all and (orientation: portrait){
+@media orientation: portrait{
 	.video1{
 		display: none;
 }
-
+}
 .video2{
 	height: 120vh;
 	top: -10%;
@@ -247,11 +247,11 @@ header{
 	z-index: -99;
 	display: block;
 }
-@media all and (orientation: landscape){
+@media orientation: landscape{
 	.video2{
 		display: none;
 }
-
+}
 
 
 
