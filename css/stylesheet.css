@@ -673,7 +673,8 @@ a{
 
 @media only screen and (min-width: 321px) and (max-width: 1024px) and (orientation: landscape){
 	.gem1,.mia2,.reg1,.iv2,.di2,.ath2,.is2,.gab2,.el2,.bi2,.jez2,.cat3,.cat1,.pol2,.jos2,.lis2,.cl2{
-	background-attachment: inherit;
+		background-attachment: inherit;}
+	.gem1,.mia2,.reg1,.iv2,.di2,.is2,.gab2,.el2,.bi2,.jez2,.cat3,.cat1,.pol2,.jos2,.lis2,.cl2{
 	background-size: cover;}
 }
 
