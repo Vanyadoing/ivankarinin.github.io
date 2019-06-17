@@ -49,7 +49,7 @@
 	
 		<!-- main video ends -->
 		<!-- mobile video starts -->
-		<video playsinline class="video2" preload="metadata" muted controls autoplay loop="loop" poster="vids/n1.jpg">
+		<video class="video2" playsinline preload="metadata" muted controls autoplay loop="loop" poster="vids/n1.jpg">
 			<source class="video2s" src="vids/MVID.mp4" type="video/mp4; codecs=avc1.42E01E, mp4a.40.2">
 			<source type="video/mp4" src="vids/MVID.mp4">
 		</video>
@@ -207,12 +207,10 @@
 		<!-- photo ends -->
 <script type="text/javascript">
 	$(".video2").prop('muted', true);
-
 	$(".mute-video").click(function () {
     if ($(".video2").prop('muted')) {
         $(".video2").prop('muted', false);
         $(this).addClass('unmute-video');
-
     } else {
         $(".video2").prop('muted', true);
         $(this).removeClass('unmute-video');
