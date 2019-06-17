@@ -233,11 +233,6 @@ header{
 	display: block;
 
 }
-@media all and (orientation: portrait){
-	.video2,.video2s{
-		display: block;
-}
-}
 .video2{
 	height: 120vh;
 	top: -10%;
@@ -248,8 +243,22 @@ header{
 	display: none;
 }
 .video2s{
-	display: none;
 }
+@media all and (orientation: portrait){
+	.video2,.video2s{
+		display: block;}
+	
+	.video1,.video1s{
+		display: none;}
+}
+@media all and (orientation: landscape){
+	.video2,.video2s,.mute-video,.unmute-video{
+		display: none;}
+	
+	.video1,.video1s{
+		display: block;}
+}
+
 
 .mute-video {
     background:url(http://cdn.flaticon.com/png/64/60750.png) no-repeat center;
@@ -257,6 +266,7 @@ header{
     border:0;
     width:32px;
     height:32px;
+    text-indent:-999px;
 	z-index: -99;
 	position: fixed;
 	right:2px;
@@ -265,12 +275,12 @@ header{
 .unmute-video {
     background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat center;
     background-size:32px;
-	width:32px;
-   	height:32px;
 	z-index: -99;
 	position: fixed;
 	right:2px;
 	bottom:2px;
+	width:32px;
+    height:32px;
 	opacity: 0.2;
 }
 
