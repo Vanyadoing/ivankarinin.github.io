@@ -234,7 +234,7 @@ header{
 
 }
 @media orientation: portrait{
-	.video1{
+	.video1,.video1s{
 		display: none;
 }
 }
@@ -246,10 +246,12 @@ header{
 	position: fixed;
 	z-index: -99;
 	display: block;
+	visibility: visible;
 }
-@media orientation: landscape{
-	.video2{
+@media all and (orientation: landscape){
+	.video2,. video2s{
 		display: none;
+		visibility: hidden;
 }
 }
 
