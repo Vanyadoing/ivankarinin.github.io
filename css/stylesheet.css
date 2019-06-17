@@ -233,10 +233,23 @@ header{
 
 
 }
+@media all and (orientation: portrait),{
+	.video{
+		display: none;
+}
 
-
-
-
+.videomob{
+	height: 120%;
+	top: -10%;
+	width: 100%;
+	object-fit: cover;
+	position: fixed;
+	z-index: -100;
+}
+@media all and (orientation: landscape),{
+	.videomob{
+		display: none;
+}
 
 
 
