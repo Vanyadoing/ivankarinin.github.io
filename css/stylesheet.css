@@ -258,7 +258,7 @@ header{
     width:32px;
     height:32px;
     text-indent:-999px;
-	z-index: -98;
+	z-index: -99;
 	position: fixed;
 	right:0;
 	bottom:0;
@@ -266,7 +266,7 @@ header{
 .unmute-video {
     background:url(http://cdn.flaticon.com/png/64/498.png) no-repeat right bottom;
     background-size:32px;
-	z-index: -98;
+	z-index: -99;
 	position: fixed;
 	right:0;
 	bottom:0;
@@ -286,7 +286,7 @@ header{
 	object-fit: cover;
     position: relative;
     overflow: visible;
-	z-index: -97;
+	z-index: -98;
 	visibility: hidden;
 						
 }
