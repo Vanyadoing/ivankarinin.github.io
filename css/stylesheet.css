@@ -239,12 +239,12 @@ header{
 }
 
 .videomob{
-	height: 120%;
+	height: 120vh;
 	top: -10%;
-	width: 100%;
+	width: 100vw;
 	object-fit: cover;
 	position: fixed;
-	z-index: -100;
+	z-index: -99;
 	display: block;
 }
 @media all and (orientation: landscape){
