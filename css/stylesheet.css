@@ -233,7 +233,7 @@ header{
 
 
 }
-@media all and (orientation: portrait),{
+@media all and (orientation: portrait){
 	.video{
 		display: none;
 }
@@ -246,7 +246,7 @@ header{
 	position: fixed;
 	z-index: -100;
 }
-@media all and (orientation: landscape),{
+@media all and (orientation: landscape){
 	.videomob{
 		display: none;
 }
