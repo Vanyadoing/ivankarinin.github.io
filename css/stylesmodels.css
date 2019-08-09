@@ -1,0 +1,318 @@
+html, body{
+height: 100%;
+}
+
+body {
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	overflow: auto;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family:"Luxia Display", "PlayfairDisplay Italic", "PlayfairDisplay Regular", "playfair-display";
+	scroll-behavior: smooth;
+	scrollbar-face-color: #559FEA;
+	scrollbar-highlight-color: #559FEA;
+	scrollbar-shadow-color: #559FEA;
+	scrollbar-3dlight-color: #559FEA;
+	scrollbar-arrow-color: #559FEA;
+	scrollbar-track-color: #559FEA;
+	scrollbar-darkshadow-color: #559FEA;
+}
+
+.style{
+	position: absolute;
+	background-image: url(../image/backleft.svg), url(../image/backright.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left bottom, right bottom;
+	height: 80%;
+	width: 98%;
+	bottom: 2%;
+	left: 1%;
+	right: 2%;
+}
+
+
+
+
+header{
+	display:block;
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 4;
+	
+}
+		.headerLANGlocation{
+			position: absolute;
+			display: block;
+			float: left;
+			height: 100%;
+			width: 25%;
+			left: 2%;
+			top: 25%;
+}
+
+
+			.langRU, .langEN {
+				font-family:"Luxia Display", "PlayfairDisplay Italic", "PlayfairDisplay Regular", "playfair-display";
+				display: flex;
+				float: left;
+				position: relative;
+				text-align: center;
+				font-size: 60%;
+				color:#D3D3D3;
+				opacity: 0.5;
+				text-decoration:none;
+				font-style: italic;
+				text-transform: none;
+				overflow: hidden;
+  				margin: 0;
+				height: 100%;
+}
+				.langEN{ width: 20px;}
+				.tmoon:hover, .news:hover, .history:hover, .collection:hover, .contacts:hover, .langRU:hover, .langEN:hover {
+						opacity: 1;
+						-webkit-transition: all 2s ease;
+						-moz-transition: all 2s ease;
+						-o-transitions: all 2s ease;
+						transition: all 2s ease;
+}
+
+
+
+.menu{
+	position: fixed;
+	width: 100%;
+	height: 15%;
+	opacity: 1;
+	font-size: 50%;
+	text-decoration:none;
+	font-style: italic;
+	text-transform: none;
+	z-index: 2;
+}
+.news{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	left:10%;
+	
+	
+}
+
+.history{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	left: 25%;
+}
+
+.moon{
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	left: 40%;
+	top:15%;
+}
+.tmoon{
+	position: absolute;
+	background-image: url(../image/moon.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	height: 50%;
+	top: 30%;
+	opacity: 0.8;
+}
+.collection{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	right: 25%;
+}
+
+.contacts{
+	position: absolute;
+	width: 15%;
+	height: 60%;
+	right: 10%;
+}
+.news, .history, .collection, .contacts {
+	color:#D3D3D3;
+	text-decoration: none;
+	top:40%;
+	text-align:center;
+	opacity: 0.8;
+}
+@media all and (min-width: 500px){
+	.menu, .langRU, .langEN, .langEST {
+		font-size: 100%;
+}
+	.moon {
+		height: 100%;
+		top:0;
+	}
+}
+
+
+.content{
+	position: absolute;
+	height: 85%;
+	width: 90%;
+	left: 5%;
+	right: 5%;
+	top: 15%;
+	border: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.dressphotos{
+	position: relative;
+	height: 85vh;
+	top:0;
+
+}
+
+.img1{
+	height: 70vh;
+	width: 100vw;
+	position: absolute;
+	background: url(../image/dresses/C1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.img2{
+	height: 70vh;
+	width: 100vw;
+	position: absolute;
+	background: url(../image/dresses/C2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.img3{
+	height: 70vh;
+	width: 100vw;
+	position: absolute;
+	background: url(../image/dresses/C3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.img4{
+	height: 70vh;
+	width: 100vw;
+	position: absolute;
+	background: url(../image/dresses/cl1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.img5{
+	height: 70vh;
+	width: 100vw;
+	position: absolute;
+	background: url(../image/dresses/cl2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.img6{
+	height: 70vh;
+	width: 100vw;
+	position: absolute;
+	background: url(../image/dresses/l1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	background-position: center;
+}
+.dressdescription{
+	position: relative;
+	height: 50vh;
+	
+}
+.textdescription{
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	left: 17%;
+	font-family:"miss-fajardose";
+	text-align: justify;
+	font-size: 1.3em;
+	color:#D3D3D3;
+	opacity: 0.4;
+	text-decoration: none;
+	font-style: none;
+	text-transform: none;
+  	margin: 0;
+}
+.detailes{
+	position: absolute;
+	height: 100%;
+	width: 49%;
+	right: 0;
+	font-family:"miss-fajardose";
+	text-align: center;
+	font-size: 2em;
+	color:red;
+	opacity: 0.6;
+	text-decoration: none;
+	font-style: none;
+	text-transform: none;
+  	margin: 0;
+}
+
+
+footer{
+	position: fixed;
+	bottom: -0.5%;
+	width: calc(100% - 32px);
+	z-index: 99;
+}
+p{
+	color:#995239;
+	opacity: 0.6;
+	text-align: center;
+	font-size: 0.45em;
+	z-index: 99;
+}
+
+::-webkit-scrollbar {
+width:10px;
+background-color: rgba(134,134,134,0.9);
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+height: 40px;
+background-color: #D8D8D8;
+border: 0px ;
+-webkit-border-radius: 7px;
+}
+
+::-scrollbar {
+width:10px;
+background-color: rgba(134,134,134,0.9);
+}
+ 
+::-scrollbar-thumb:vertical {
+height: 40px;
+background-color: #858585;
+border: 1px solid #474747;
+border-radius: 7px;
+}
+
+

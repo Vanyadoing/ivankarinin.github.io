@@ -121,9 +121,10 @@ header{
 }
 
 
-			.langRU, .langEN, .langEST {
+			.langRU, .langEN {
 				font-family:"Luxia Display", "PlayfairDisplay Italic", "PlayfairDisplay Regular", "playfair-display";
 				display: flex;
+				float: left;
 				position: relative;
 				text-align: center;
 				font-size: 60%;
@@ -136,10 +137,8 @@ header{
   				margin: 0;
 				height: 100%;
 }
-				.langRU{ float: left;}
-				.langEN{float: left;}
-				.langEST{float: left;}
-				.tmoon:hover, .news:hover, .history:hover, .collection:hover, .contacts:hover, .langRU:hover, .langEN:hover, .langEST:hover {
+				.langEN{ width: 20px;}
+				.tmoon:hover, .news:hover, .history:hover, .collection:hover, .contacts:hover, .langRU:hover, .langEN:hover {
 						opacity: 1;
 						-webkit-transition: all 2s ease;
 						-moz-transition: all 2s ease;
@@ -583,7 +582,7 @@ a{
 .ath2{
 	background: url(../image/dresses/A2.jpg) fixed;
 
-		background-size: cover;
+		background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0;
 	background-position: center;
@@ -672,8 +671,12 @@ a{
 }
 
 @media only screen and (min-width: 321px) and (max-width: 1024px) and (orientation: landscape){
-	.gem1,.mia2,.reg1,.iv2,.di2,.ath2,.is2,.gab2,.el2,.bi2,.jez2,.cat3,.cat1,.pol2,.jos2,.lis2,.cl2{
+	.gem1,.mia2,.reg1,.iv2,.ath2,.di2,.is2,.gab2,.el2,.bi2,.jez2,.cat3,.cat1,.pol2,.jos2,.lis2,.cl2{
 		background-attachment: inherit;}
+	.ath2{
+		background-size: cover;
+		background-attachment: inherit;
+	}
 	.gem1,.mia2,.reg1,.iv2,.di2,.is2,.gab2,.el2,.bi2,.jez2,.cat3,.cat1,.pol2,.jos2,.lis2,.cl2{
 	background-size: cover;}
 }
@@ -692,9 +695,7 @@ a{
 	.cl1,.cl2,.cl3,.pol1,.pol2,.pol3,.jez1,.jez3,.jez2,.el1,.el2,.el3,.is2,.ath2{
 		flex: 0 1 100vh;
 	}
-	.ath2{
-		background-size: contain;
-	}
+	
 	.lis2,.jos2,.bi2{
 		flex: 0 0.5 79vh;
 	}
@@ -744,16 +745,11 @@ a{
 		flex: 0 1.8 139vh;
 	}
 }
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 1024px) and (orientation: landscape){
+.ath2{
+		background-size: contain;
+	}
+}
 
 footer{
 	position: fixed;
