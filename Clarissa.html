@@ -4,10 +4,7 @@
 		<meta charset="utf-8">
 		<title>IVAN KARININ</title>
 		<style>
-		@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
-		</style>
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
-		<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap&subset=cyrillic');
 		@import url("css/stylesmodels.css");
 		</style>
 		<link rel="shortcut icon" href="image/favicon.png" type="image/png">
@@ -16,6 +13,11 @@
 		<link rel="stylesheet" href="css/jquery.bxslider.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		
+
+
+  		
+
 	</head>
 	<body>
 		
@@ -47,23 +49,86 @@
 					<div class="img6"></div>
 				</div>
 			</div>
+		</div>
 			<div class="dressdescription">
-				<div class="textdescription"> Серебристое платье-комбинация в пол с тонкими бретелями и струящимся шлейфом.</br> </br> Волшебного вида рукава-колокольчики выполнены из серебристой сетчатой ткани. Открытая спина с переплетением из бретелей. 
-				</br></br>
+				<div class="dresstitle"> CLARISSA
+				</div>
+				<div class="textdescription"> 
+					
+					Серебристое <br> платье-комбинация в пол с тонкими бретелями и струящимся шлейфом.<br>Волшебного вида рукава-колокольчики выполнены из серебристой сетчатой ткани. Открытая спина с переплетением из бретелей. 
+				<br>
 
 				В качестве основной ткани платья использован легкий струящийся сатин со стальным блеском.
-	
 				</div>
 				<div class="detailes">
-					Big Autumn <b>SALES</b> -50% OFF<br><br>
+					<p class="price">800 € </p>
+					<p class="sizebutton" href="">34</p>
+					<p class="sizebutton" href="">36</p>
+					<p class="sizebutton" href="">38</p>
+					<p class="sizebutton" href="">40</p>
+					<br><br>
+						<input id="modalokno" type="checkbox">
+						<label class="modalokno-button" for="modalokno">
+						<i class="fa fa-fire" aria-hidden="true"></i>
+						<span>Заказать</span>
+						</label>
+								<label class="modalokno-background" for="modalokno"></label>
 
-					<s>20000$</s><br><br>
-
-					New PRICE only <b>10000$</b>
+								<div class="modalokno-content">
+									
+									
+										<label class="modalokno-close" for="modalokno">&#10005;</label>
+										<h2>Запрос</h2>
+										
+										<form id="contactForm" action="handler.php" method="post">
+											<div class="field-block">
+												<label for="name">Ваше имя:</label>
+												<input id="name" class="field" name="name" required type="text" placeholder="Иванов Иван Иванович">
+											</div>
+											<div class="field-block">
+												<label for="email">Ваш E-mail:</label>
+												<input id="email" class="field" name="email" required type="email" placeholder="ivanov@email.com">
+											</div>
+											<div class="field-block">
+												<label for="phone">Ваш телефон:</label>
+												<input id="phone" class="field" name="phone" required type="text" placeholder="+0 (123) 456-78-90">
+											</div>
+											<div class="field-block">
+												<label for="message">Текст сообщения:</label>
+												<textarea id="message" class="field" required name="message" rows="4" placeholder="Пожалуйста, укажите название модели и размер интересующего Вас платья"></textarea>
+											</div>
+											<div class="field-block">
+												<input id="check" name="check" checked type="checkbox">
+												<span class="check-text">Я добровольно отправляю свои данные</span>
+											</div>
+											<button id="button" class="button" type="submit">Отправить</button>
+											<div class="result">
+												<span id="answer"></span>
+												<span id="loader"><img src="image/loader1.gif" alt=""></span>
+											</div>
+										</form>
+									
+									
+								</div> <!-- .modal-content -->
+					
+					
+					
 				</div>
 		  </div>
-		</div>
 		
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
 <script>
   $(document).ready(function(){
   $('.slider').bxSlider({

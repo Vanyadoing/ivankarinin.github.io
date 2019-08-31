@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форма обратной связи для сайта</title>
+	<style type="text/css">
+	@import url("css/main.css");
+	</style>
+
+</head>
+<body>
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<div class="container">
+		<h2>Форма обратной связи</h2>
+		<form id="contactForm" action="handler.php" method="post">
+			<div class="field-block">
+				<label for="name">Ваше имя:</label>
+				<input id="name" class="field" name="name" required type="text" placeholder="Иванов Иван Иванович">
+			</div>
+			<div class="field-block">
+				<label for="email">Ваш E-mail:</label>
+				<input id="email" class="field" name="email" required type="email" placeholder="ivanov@email.com">
+			</div>
+			<div class="field-block">
+				<label for="phone">Ваш телефон:</label>
+				<input id="phone" class="field" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
+			</div>
+			<div class="field-block">
+				<label for="message">Текст сообщения:</label>
+				<textarea id="message" class="field" required name="message" rows="4"></textarea>
+			</div>
+			<div class="field-block">
+				<input id="check" name="check" checked type="checkbox">
+				<span class="check-text">Я добровольно отправляю свои данные</span>
+			</div>
+			<button id="button" class="button" type="submit">Отправить</button>
+			<div class="result">
+				<span id="answer"></span>
+				<span id="loader"><img src="images/loader.gif" alt=""></span>
+			</div>
+		</form>
+	</div>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<!-- Подключение урезанной версии jQuery -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+	<!-- Подключение полной версии jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	
+	<!-- Маска для номера телефона -->
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- Инициализация и Ajax-запрос -->
+	<script src="js/main.js"></script>
+</body>
+</html>
