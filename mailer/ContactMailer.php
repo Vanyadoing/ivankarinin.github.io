@@ -38,7 +38,7 @@ class ContactMailer
 		$body = "Имя: " . $name . "\nE-mail: " . $email . "\nТелефон: " . $phone . "\n\nСообщение:\n" . $message;
 
 		// Создаем объект PHPMailer
-        $mailer = new PHPMailer();
+        $mailer = new PHPMailer(true);
         // Настройки подключения
         $mailer->isSMTP();
         // Устанавливает хост почтового сервера (Mail.ru: smtp.mail.ru, Google: smtp.gmail.com)
